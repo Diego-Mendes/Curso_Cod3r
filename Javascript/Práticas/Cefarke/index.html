@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+    <title>Cefarke</title>
+</head>
+<body>
+    
+
+    <header id="cabecalho"><h1>CEFARKE</h1></header>
+
+
+    <section id="corpo">
+
+        <h2>Escalas termométricas</h2>
+       
+     <p>
+         <input type="button" value="Celsius" id="c" onclick="converte('c')">
+     </p>
+
+     <p>
+        <input type="button" value="Farenheit" id="f" onclick="converte('f')">
+    </p>
+
+    <p>
+        <input type="button" value="Kelvin" id="k" onclick="converte('k')">
+    </p>
+
+    <input type="number" name="valortemp" id="temp" placeholder="Temperatura">
+        
+        <div id="res"></div>
+
+    </section>
+
+
+    <footer id="rodape"><p> © Diego Mendes 2021</p></footer>
+
+    
+    
+</body>
+</html>
