@@ -19,11 +19,11 @@ const transformArray = function (n){
         newarray.push(i)
     }
 
-    const resultado = newarray.reduce(function(ant, atl){
-        console.log(newarray) 
-        return ant * atl})
-
+    const resultado = newarray.reduce(function(ant, atl){ return ant * atl})
+       // console.log(newarray) 
         return resultado
 }
 
 console.log(transformArray(5))
+console.log(transformArray(3))
+console.log(transformArray(7)) 
