@@ -19,6 +19,12 @@ String.prototype.Upper = function (){
     return this.toUpperCase()
 }
 
+//separa uma string em um array
+String.prototype.split('')
+
+//verifica se 'String' tem algum elemento que tenha o caractere 'x'
+String.prototype.includes(x)
+
 console.log('Diego Mendes'.reverse())
 console.log([10, 09, 937, 82].first())
 console.log("diego mendes".Upper())
