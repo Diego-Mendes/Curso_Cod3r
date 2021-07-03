@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+
+    <link rel="stylesheet" href="server.js">
+
+    <style>
+        input , textarea, select{
+            display: block;
+            margin-bottom: 10px ;
+        }
+
+        input[type=radio], input[type=checkbox]{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formulários</h1> 
+    
+    
+    <form method="POST">
+    <!--input tipo texto e senha-->
+    <input type="hidden" name="id" value="3">
+        <input type="text" name="nome" placeholder="Seu Nome">
+        <input type="password" name="senha" id="senhaid" placeholder="Senha">
+<br>
+        <textarea name="bio"  cols="30" rows="10"></textarea>
+<br>
+        <!--Input tipo radio-->
+        <div>
+            <input type="radio" name="tipo" value="admin" id="tipoadmin"> <label for="tipoadmin">Admin</label>
+            
+            <input type="radio" name="tipo" value="regular" id="tiporegular"> <label for="tiporegular">Regular</label>
+        </div>
+
+        <!--input tipo checkbox-->
+        <div>
+            <p>Gênero:</p>
+            <input type="checkbox" name="Masculino" id="masc" > Masculino
+            <input type="checkbox" name="Feminino" id="femi"> Feminino
+        </div>
+
+        <!--input tipo select-->
+        <select name="estado" id="estados">
+           <option value="">Estado</option>
+            <option value="ce">Ceará</option>
+            <option value="pe">Pernambuco</option>
+            <option value="ba">Bahia</option>
+        </select>
+
+        <!--select multiplo-->
+        <select name="interesses" multiple size="4">
+            <option value="js">Javascript</option>
+            <option value="html">HTML5</option>
+            <option value="css">CSS</option>
+            <option value="node">Node</option>
+         </select>
+        
+        <button formaction="http://localhost:3003/usuarios">Incluir</button>
+        <button formaction="http://localhost:3003/usuarios/3">Alterar</button>
+    </form>
+  
+</body>
+</html>
+
+

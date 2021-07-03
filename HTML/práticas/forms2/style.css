@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #050626;
+    font-size: 1.7rem;
+}
+
+form{
+    width: min(85vw, 70rem);
+
+    margin-left: 3rem;
+    margin-top: 2.5rem;
+    
+
+    
+    border-radius: .5rem .8rem;
+    padding: 2rem;
+
+    box-shadow: .2rem .2rem .2rem rgba(242, 56, 39, 0.6);
+
+    font-family: 'PT Sans', sans-serif;
+    text-shadow: .1rem .1rem .1rem #0d448c5b;
+}
+
+h1{
+    margin-left: 12rem;
+    margin-top: 3rem;
+
+    font-size: 5rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-style:bold;
+
+    color: #DFF2F0;
+    text-shadow: .2rem .2rem .2rem black ;
+}
+
+header > p{
+    margin-left: 12rem;
+    color: #0F41A6;   
+
+    font-family:  'PT Sans', sans-serif;
+    
+}
+
+
+form fieldset{
+    border:none;
+    margin-bottom: 2rem;
+    
+}
+
+form > fieldset > input[type='text'],select, textarea, input[type='number'], input[type='email']{
+    margin: 1.2rem 0;
+    display: block;
+}
+
+label{
+    margin-bottom: 1.2rem;
+    display: block;
+}
+
+form fieldset input[type='radio'], input[type='checkbox']{
+    display: inline;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   
+   
+}
+
+input:focus, textarea:focus{
+    background-color: #0f41a61c;
+}
+
+#group-left{
+    
+    float: right;
+    margin-top: -49.5rem;
+}
+
+
+#group-left textarea{
+    width: 38rem;
+}
+
+button{
+    width: 7.5rem;
+    height: 3.5rem;
+    font-weight: bold;
+
+    background-color: #F23827;
+    color: #DFF2F0;
+
+    border-radius: .4rem;
+    border: none;
+
+    transition: .3s ;
+    
+}
+
+button:hover{
+    background-color: black;
+
+    cursor: pointer;
+}
+
+#bg{
+    margin-right: 13rem;
+    float: right;
+}
+
+.animated{
+    height: 60rem;
+    float: right;
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista aninhada</title>
+
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+</head>
+<body>
+
+    <h1>Lista aninhada</h1> 
+    
+    <p>
+        <ul class="tree">
+         <li>
+            <span wm-folder> Back-end</span>
+             <ul>
+                 <li>
+                    <span wm-folder>app</span>
+                    <ul>
+                        <li>produto.js</li>
+                        <li>usuario.js</li>
+                        <li>venda.js</li>
+                    </ul>
+                 </li>
+                 <li>
+                    <span wm-folder>config</span>
+                    
+                    <ul>
+                        <li>banco.js</li>
+                        <li>banco.js</li>
+                        <li>server.js</li>
+                    </li>
+                 </ul>
+             </ul>
+         </li>   
+        </ul>
+    </p>
+
+    <p>
+        <ul class="tree">
+            <li>
+                <span wm-folder>Front-end</span>
+                <ul>
+                    <li>
+                        <span wm-folder> public</span>
+                       <ul>
+                           <li>app.css</li>
+                           <li>app.html</li>
+                           <li>app.js</li>
+                       </ul> 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    
+    <script>
+       //pega todos os spans com a prop. 'wm-folder' e faz um foreach, passando em cada um a função onclick pra esconder ou mostrar a ul
+       document.querySelectorAll('[wm-folder]').forEach(elemento => {
+           
+           elemento.onclick = function(e){
+                const ul = elemento.nextElementSibling
+                const display = ul.style.display 
+                ul.style.display = display === 'block' ? 'none' : 'block'
+            }
+        })
+    </script>
+</body>
+</html>

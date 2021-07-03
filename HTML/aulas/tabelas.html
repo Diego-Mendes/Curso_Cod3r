@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+
+    <style>
+        caption{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 23px;
+        }
+        
+        table{
+           border-collapse:collapse ; /*nenhuma borda*/
+
+        }
+
+        th, td{
+            padding: 10px;
+
+        }
+
+        thead tr{
+            border-bottom: solid 2px rgba(0, 0, 0, 0.767);
+        }
+
+        tbody tr:hover{
+            background-color: #dedede;
+        }
+
+        tfoot{
+            background-color: rgba(0, 0, 0, 0.678);
+            font-weight: bold;
+            color: white;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+    <table>
+        <caption>Produtos</caption>
+
+        <thead> <!--cabeçalho-->
+            <tr> <!--define uma linha-->
+                <th>produto</th> <!--define uma coluna-->
+                <th>preço</th>
+                <th>quantidade</th>
+            </tr>
+        </thead>
+
+        <tbody> <!--corpo-->
+            <tr> <!--linha-->
+                <td>Ipad</td> <!--coluna-->
+                <td>3999</td>
+                <td>2</td>
+            </tr>
+
+            <tr> <!--linha-->
+                <td>Mac</td> <!--coluna-->
+                <td>7999</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <!--colspan determina o numero de espaços na horizontak e rowspan na vertical-->
+                <td colspan="3">Total</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <script>
+     
+    </script>
+</body>
+</html>

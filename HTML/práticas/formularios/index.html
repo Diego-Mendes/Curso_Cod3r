@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencha o formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de DEVs</h1>
+        <p id="subtitulo">Complete com suas informações</p>
+    </header>
+
+    <form action="" method="POST">
+       <!--area de nomes:-->
+        <fieldset class="group">
+            <section id="name" class="sections">
+                <strong><label for="nome">Nome:</label></strong>
+                <input type="text" name="nome" id="nome" required>
+            </section>
+
+            <section id="sobren" class="sections">
+                <strong><label for="sobrenome">Sobrenome:</label></strong>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </section>
+       </fieldset>
+
+       <!--área de email:-->
+       <section id="email" class="sections">
+           <strong><label for="email">Email:</label></strong>
+           <input type="email" name="email" id="email" required>
+       </section>
+
+       <!--Area de pergunta1-->
+       <section class="sections">
+        <strong><label for="p1">De qual lado você atua?</label></strong>
+        <label for="frotnweb">
+            <input type="radio" name="devWeb" id="frontweb" value="front-end" checked>
+            Front-end
+        </label>
+
+        <label for="backweb">
+            <input type="radio" name="devWeb" id="backeweb" value="back-end">
+            Back-end
+        </label>
+
+        <label for="full">
+            <input type="radio" name="devWeb" id="full" value="full-stack">
+            Full-stack
+        </label>
+
+        </section>
+
+        <!--Area de senioridade-->
+        <section class="sections">
+            <strong><label for="snrdade">Senioridade</label></strong>
+           
+            <select name="Senioridade" id="snrdade">
+                <option selected disabled value="">Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Sênior</option>
+            </select>
+        </section>
+
+        <!--area de competências:-->
+        <fieldset class="group">
+            <section class="sections" >
+                <strong>
+                    <p>Selecione suas tecnologias:</p>
+                </strong>
+
+                <div id="check">
+                    <label for="js">Javascript</label>
+                    <input type="checkbox" name="js" id="js" value="javascript">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" name="html" id="html" value="html">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" name="css" id="css" value="css">
+                </div>
+            </section>
+        </fieldset>
+
+        <section>
+            <strong>
+                <p>Conte um pouco da sua experiência</p>
+            </strong>
+            <textarea name="descricao" id="descricao" cols="30" rows="6"></textarea>
+        </section>
+
+        <button type="submit">Concluir</button>
+    </form>
+
+   
+    
+</body>
+</html>
