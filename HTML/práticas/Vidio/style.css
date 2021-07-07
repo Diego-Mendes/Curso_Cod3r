@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #121317;
+    font-size: 1.6rem;
+    color: #BEC7C7;
+
+    font-family:  'Poppins', sans-serif;
+
+    overflow-x: hidden;
+}
+/*Header--------------------------------------------------*/
+
+header{
+    font-weight: bold;
+    font-size: 2rem;
+
+    margin-left: 10rem;
+    margin-top: 3rem;
+}
+
+header #login-menu{
+   
+    float: right;
+    margin-top: -13rem;
+    margin-right: 3.5rem;
+   
+}
+
+header #login-menu button{
+    /* width: 8rem;
+    height: 3.2rem; */
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    padding: 1.2rem;
+    margin-left: 1rem;
+
+    border: none;
+    border-radius: .2rem .2rem;
+
+    color: #121317;
+
+    transition: .5s;
+}
+
+header #login-menu button:nth-child(2){
+    background-color: #BB2020;
+    color: #BEC7C7;
+}
+
+header #login-menu button:hover{
+   cursor: pointer;
+   
+    background-color: #06111C;
+    color: #BEC7C7;
+
+    box-shadow: .1rem .1rem .4rem #bec7c77c;
+}
+
+/*Aba de vídeos -----------------------------------------*/
+
+#videos{
+    /* background-color: blue; */
+    width: 100vw;
+    height: auto;
+    text-align: center;
+   
+
+   
+}
+
+#videos h2{
+    
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFEB4D;
+
+}
+
+#videos h2, p{
+    padding-top: 1rem;
+    padding-bottom: .3rem;
+}
+ 
+ #video-part{
+  /* background-color: rgba(222, 184, 135, 0.26); */
+
+  /* margin: 4rem auto; */
+  padding: 2rem 0;
+
+    width: min(90vw, 150rem);
+    height: auto;
+    margin: auto;
+    display: flex;
+   
+  
+    justify-content: center;
+    align-items: center;
+}
+
+#videos #descricao{
+    width: 60rem;
+    text-align: center;
+
+    margin: 0 auto;
+}

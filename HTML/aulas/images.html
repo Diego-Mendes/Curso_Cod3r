@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML</title>
+</head>
+<body>
+    
+    <p>
+        imagem normal
+        <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="imagem 1" width="513" height="342">
+    </p>
+
+    <p>
+        gif
+        <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="intro cod3r" height="342"> 
+    </p>
+
+    <p>
+        imagem png
+        <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="imagem 3" height="342">
+    </p>
+
+    <p>
+        <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="avatar" height='50' style="float: left;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum commodi iure dolore, sed reprehenderit veritatis nihil aut mollitia dolores neque eveniet alias ut dolorem fugit vitae obcaecati deserunt nemo voluptatum.
+    </p>
+
+    <p class="cidade"></p>
+
+    <p>
+        <picture>
+            <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png" media="(min-width: 1000px)">
+            <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="lofo">
+        </picture>
+    </p>
+</body>
+
+<style>
+    .cidade{
+        width: 513px;
+        height: 324px;
+
+        background-image: url(http://files.cod3r.com.br/curso-web/imagem4.jpg);
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>
+
+</html>

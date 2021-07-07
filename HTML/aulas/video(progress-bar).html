@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+
+    <video id="meuvideo" controls controlsList='nodownload'>
+        <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4" >
+            Seu navegador não suporta o vídeo
+    </video>
+    
+    <div progress-bar='meuvideo' class="progress">
+        <div id="progresso"></div>
+    </div>
+
+    <div id="controls">
+        <button pausar='meuvideo' onclick="pause()">Pause</button>
+        <button continuar='meuvideo' onclick="play()">Play</button>
+    </div>
+
+    
+</body>
+
+<script>
+   
+   function configurarVideo(id){
+       const video = document.getElementById(id) 
+       video.oncontextmenu = () => false
+
+       document.querySelector(`[continuar=${id}]`).onclick = e => video.play()
+       document.querySelector(`[pausar=${id}]`).onclick = e => video.pause()
+
+       setInterval(() => {
+           const percentual = (video.currentTime/video.duration) * 100
+           const videobar = document.querySelector('[progress-bar] > div')
+
+           videobar.style.width = `${percentual}%`
+       }, 100)
+
+
+   }
+  
+   configurarVideo('meuvideo')
+    
+
+   
+</script>
+
+<style>
+    
+    #controls{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+
+    #controls button{
+       border: none;
+       border-radius: 2px;
+
+       height: 30px;
+       width: 100px;
+
+        color: wheat;
+        background-color: rgba(255, 13, 13, 0.685);
+    }
+
+    #controls button:hover{
+        background-color: black;
+        cursor: pointer;
+        box-shadow: 2px 1px 1px rgba(255, 13, 13, 0.685);
+    }
+  
+    #meuvideo{
+        margin-left: 100px;
+        height: 600px;
+        
+    }
+
+    .progress{
+       position: absolute;
+        margin-left: 100px;
+        background-color: white;
+        height: 13px;
+        width: 1067px;
+    }
+
+    .progress #progresso{
+        position: absolute;
+        background-color: rgba(0, 0, 255, 0.664);
+       height: 100%;
+        
+    }
+</style>
+</html>
