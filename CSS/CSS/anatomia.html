@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector{
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.8);
+            
+            /*valores numericos associados a uma unidade específica*/
+            font-size: 30px;
+
+            /*valores fixos*/
+            text-align: center;
+
+            /*multiplos valores*/
+            border: solid 3px navy; /*shorthand property*/
+
+            /*valores com alternativas*/
+            font-family: 'Segoe UI', sans-serif;
+
+            /*funções*/
+            width: calc(100% - 100px);
+
+            transition: .5s;
+           margin: 0 auto;
+           justify-content: center;
+           
+        }
+
+        /*pseudo-classes*/
+        .selector:hover{
+            background-color: #fff;
+            color: black;
+
+            width: calc(100% - 50px);
+        }
+
+        /*pseudo-elementos*/
+        .selector::first-letter{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .objeto{
+            background-color: rgba(128, 128, 128, 0.829);
+            border: solid 2px;
+
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+
+            margin-top: 200px;
+            width: 300px;
+            height: 300px;
+
+            transition: .5s;
+        }
+
+        .objeto:hover{
+            border-radius: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+
+    <div class="objeto"></div>
+</body>
+
+</html>
