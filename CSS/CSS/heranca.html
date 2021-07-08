@@ -6,11 +6,34 @@
     <title>Herança</title>
     <style>
         /* ... */
+
+        body{
+            font-family: monospace;
+            font-size: 40px;
+            border: solid 3px black;
+            padding: 20px;
+        }
+
+       div{
+           border: inherit; /*palavra especifica de herança*/
+           padding: inherit;
+           transition: .5s;
+
+           height: 50px;
+       }
+
+       div:hover{
+           height: 100px;
+           background-color: black;
+           color: white;
+
+           padding-left: 1000px;
+       }
     </style>
 </head>
 
 <body>
-    <h1>Herança</h1>
+    <h1 style="text-align: center;">Herança</h1>
     <div>Estou herdando</div>
 </body>
 

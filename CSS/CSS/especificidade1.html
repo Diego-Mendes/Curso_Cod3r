@@ -5,12 +5,33 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity 
+        
+        ordem de hierarquia de processamento:
+        1.  !important 
+        2. seletores específicos (tag, id...)
+        3. ultimo a ser processado
+        */
+
+
+        p{
+            background-color: aqua ;
+        }
+
+        .observacao{
+            background-color: rgba(0, 0, 255, 0.425);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        p#obs{
+            background-color: rgba(218, 144, 92, 0.555);
+        }
     </style>
 </head>
 
 <body>
-    <p class='observacao'>Olha essa observação!!!!</p>
+    <p class='observacao' id="obs">Olha essa observação!!!!</p>
 </body>
 
 </html>
