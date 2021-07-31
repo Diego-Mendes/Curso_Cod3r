@@ -8,27 +8,39 @@
         body {
             margin: 0;
             font-size: 40px;
+          
         }
 
         div {
             border: solid 5px #222;
+            
         }
 
+      
         .m30 {
-            margin: 30px;
+            margin:  30px;
+           
         }
 
 
         .mb30 {
             margin-bottom: 30px;
+           
         }
 
         .mt30 {
             margin-top: 30px;
+           
+            
         }
 
-        /* 
-            float: left / right
+        .divs {
+         padding: 0.05px;
+          overflow: hidden;
+        }
+        
+           /*
+            /* float: left 
             position: absolute
             display: inline-block
         */
@@ -36,11 +48,13 @@
 </head>
 
 <body>
-    <div class="m30">Conteúdo 1</div>
-    <div class="m30" style="border: none"></div>
-    <div class="m30">Conteúdo 2</div>
-    <div class="mb30">Conteúdo 3</div>
-    <div class="mt30">Conteúdo 4</div>
+    <section class="divs">
+        <div class="m30 divs" >Conteúdo 1</div>
+        <div class="m30 divs" style="border: none;"></div>
+        <div class="m30 divs" id="conteudo2">Conteúdo 2</div>
+        <div class="mb30 divs">Conteúdo 3</div>
+        <div class="mt30 divs">Conteúdo 4</div>
+    </section>
 </body>
 
 </html>

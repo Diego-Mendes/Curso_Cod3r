@@ -6,6 +6,35 @@
     <title>Display</title>
     <style>
         /* ... */
+
+        body{
+            font-size: 40px;
+            color: black;
+        }
+
+        div{background-color: blueviolet; color: white;}
+        ul{padding:0;}
+        span{background-color: turquoise;}
+        li{background-color: grey; color: white;}
+
+        div, span, li{
+            width: 50%; /*V, X, V*/
+            width: 200px; /*V, X, V*/
+
+            height: 80px;  /*V, X, V*/
+
+            padding-top: 20px;  /*V, V, V*/
+
+            text-align: center;
+
+            display: block; /*Pulam a linha. Com essa prop o span passa a considerar a altura e largura*/
+
+            display: inline; /*mesma linha. (elementos ignoram width e height com essa prop)*/
+
+            display: inline-block; /*agora ficam na mesma linha mas consideram altura e largura*/
+
+            
+        }
     </style>
 </head>
 
