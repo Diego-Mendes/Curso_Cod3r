@@ -1,0 +1,90 @@
+*{
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+
+html{font-size: 62.5%;}
+
+body{
+    font-size: 1.6rem
+}
+
+/*posicionar*/
+.curso{
+    display: inline-block;
+    height: 28rem;
+    width: 27rem;
+    margin: 0 1.8rem;
+
+    /* background-color: aquamarine; */
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    box-shadow: .1rem .1rem 1rem rgba(0, 0, 0, 0.61);
+
+    position: relative;
+  
+}
+
+
+/*tamanho das imagens*/
+.curso img{
+    display: block;
+    height: 14.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .5rem;
+}
+
+
+
+.cards {
+    
+}
+
+/*arrumar os textos*/
+
+.curso .curso-info{
+    
+    margin: .6rem 1rem;
+    position: absolute;
+    height: 80px;
+   
+
+  overflow-y: hidden;
+}
+    
+
+
+.curso .curso-info p{
+    line-height: .8rem;
+    
+   
+}
+
+.curso .curso-info h4{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.curso .curso-preco{
+    
+    float: right;
+    margin-top: 10rem;
+    margin-right: 1.7rem;
+    font-size: 2rem;
+}
+
+.preco-de{
+    text-decoration: line-through;
+    font-size: 1.6rem;
+    color: #B22525;
+}
+
+.preco-por{
+    font-size: 2.5rem;
+    color: #008002;
+    font-weight: bolder;
+}
