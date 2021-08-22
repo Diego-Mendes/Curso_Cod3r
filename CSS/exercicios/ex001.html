@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+
+    <style>
+
+        div{
+            width: 200px;
+            height: 100px;
+        
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+            
+        }
+
+
+        .esquerdacima{
+            background-color: blue;
+            grid-area: "ec";
+            
+        }
+        .esquerdabaixo{
+            background-color: red;
+            grid-area: 'eb';
+
+            }
+        .direitabaixo{
+            background-color: green;
+            grid-area: 'db';
+        
+        }
+        .direitacima{
+            background-color: yellow;
+            grid-area: 'dc';
+        }
+
+        body{
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 200px 200px;
+            grid-template-areas: 
+            "ec dc"
+            "eb db"
+            ;
+            justify-content: space-between;
+            align-content: space-between;
+            
+        }
+
+       
+        div:hover{
+            width: 150px;
+            transition: .5s;
+           
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="esquerdacima">Esquerda Cima </div>
+    <div class="direitacima">Direita cima </div>
+    <div class="esquerdabaixo">Esquerda baixo </div>
+    <div class="direitabaixo">Direita baixo </div>
+    
+</body>
+</html>

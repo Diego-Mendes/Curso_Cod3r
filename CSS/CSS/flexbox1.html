@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="css/tag.css">
     <style>
         /* ... */
+
+        .big{
+            font-size: 1.5em;
+        }
+
+        .flex-container{
+            display: flex; /*passa a ser um flex container. Por padrão vem no eixo das linhas*/
+            flex-direction: column; /*eixo principal agora é o das colunas*/
+            flex-direction: column-reverse; /*inverte os elementos*/
+            flex-direction: row; /*valor padrão*/
+            width: 50%; 
+            flex-wrap: wrap; /*quebra a linha quando dá overflow*/
+            flex-wrap: wrap-reverse; /*inverte a linha */
+            flex-flow: row wrap; /*flex-direction + flex-wrap*/
+
+            /*Main Axis*/
+            justify-content: flex-start; /*alinha os elementos no começo*/
+            justify-content: flex-end; /*alinha os elementos no final*/
+            justify-content: center; /*alinha os elementos no centro*/
+            justify-content: space-around; /*distribui os elementos de forma uniforme (espaços iguais em volta dos elementos)*/
+            justify-content: space-between; /*cria um espaço igual entre os elementos*/
+
+            /*Cross Axis*/
+            height: 400px;
+            align-items: stretch; /*valor padrão*/
+            align-items: baseline; /*alinha pela linha de base das fontes*/
+            align-items: flex-start; /*alinha no inicio/topo do cross axis*/
+            align-items: flex-end; /*alinha no final/bottom do cross axis*/
+            align-items: center;/* alinha no centro*/
+            
+            /*mais de uma linha:*/
+            align-content: space-around;/*espaços iguais em cima e embaixo*/
+            align-content: space-between; /*espaço entre os dois*/
+        }
     </style>
 </head>
 
