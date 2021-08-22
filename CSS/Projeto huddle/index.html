@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title> Huddle </title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border: none;
+      text-decoration: none;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    /* main, 
+    header, 
+    footer{
+      height: 100%;
+      width: 100%;
+    } */
+
+    .sr-only{
+      position: absolute;
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      clip-path: (0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+/* 
+    .image{
+      grid-area: images;
+      
+    } */
+
+    header{
+      grid-area: header;
+      padding: 3rem;
+    
+     
+    }
+
+   
+
+    main{
+      grid-area: main;
+      display: flex;
+      justify-content: space-around;
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    main #texto{
+      margin-top: 3rem;
+    }
+
+    main h1{
+      font-family: 'Poppins' sans-serif;
+      font-weight: 600;
+      font-size: 2.8em;
+      
+      
+      margin-bottom: 1.8rem;
+    }
+
+
+
+    main .buttons{
+      width: 19rem;
+      height: 5rem;
+      margin-top: 2.5rem;
+
+      background-color: hsl(300, 69%, 71%);
+      color: white;
+      box-shadow: .2rem .2rem .6rem rgba(0, 0, 0, 0.336);
+
+      border-radius: 3rem;
+
+      font-size: 1.7rem;
+
+      transition: .5s;
+    }
+
+    main .buttons:hover{
+      cursor: pointer;
+      background-color: hsl(300, 69%, 80%);
+    }
+
+    footer{
+    
+      grid-area: footer;
+      display: flex;
+      justify-content: flex-end;
+     
+      
+    }
+
+
+  footer #icones img {
+   padding: 0 .5rem;
+  }
+
+
+    body{
+      height: 100vh;
+      font-size: 1.6rem;
+      background-color: #664AB1;
+      background-image: url(images/bg-desktop.svg);
+     
+
+     /*Parte de grid:*/
+     display: grid;
+     grid-template-columns: 50vw 42vw;
+     grid-template-rows: 15rem 1fr 5rem;
+
+     grid-template-areas: 
+      'header header'
+      'main main'
+      'footer footer';
+    }
+
+    /*Media Queries ---------------------------------*/
+
+    @media(max-width: 1390px){
+ 
+      #bg-image{
+        height: 40rem;
+      }
+
+      main{
+        font-size: 1.6rem;
+      }
+    }
+
+    @media(max-width: 1150px){
+
+
+      #bg-image{
+        height: 30rem;
+      }
+
+      footer img{
+        height: 3rem;
+      }
+    }
+
+    @media(max-width: 375px), (orientation: portrait){
+      
+      header img{
+        height: 3.5rem;
+        /* padding: 5rem; */
+      }
+      #bg-image{height: 22rem;}
+
+      body{
+        background-image: none;
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 19rem 1fr 1fr 16rem;
+        grid-template-areas: 
+        'header'
+        'main'
+        'main'
+        'footer'
+        ;
+
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-position:top;
+        background-size: 40rem;
+      }
+
+
+      main{
+    
+        
+       display: flex;
+       flex-direction: column;
+
+       font-size: 1.2rem;
+       
+       text-align: center;
+       
+      }
+
+      main h1{
+        font-size: 2em;
+      }
+
+      main .buttons{
+       width: 17rem;
+       height: 3.5rem;
+
+       background-color: white;
+       color: rgb(102, 74, 177);
+      }
+
+      footer{
+        justify-content: center;
+      
+        align-items: flex-end;
+        margin-bottom: .5rem;
+      }
+
+      footer img{
+        height: 2.3rem;
+      }
+
+
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header class="cabecalho">
+    <nav class="menu">
+      <img src="images/logo.svg" alt="logo"> 
+
+    </nav>
+  </header>
+
+  <main class="content">
+
+   <section id="bg">
+    <img src="images/illustration-mockups.svg" alt="" id="bg-image">
+   </section>
+
+    <section id="texto">
+      <h1>Build The Community <br> Your Fans Will Love</h1>
+      <p>
+        Huddle re-imagines the way we build communities. You have <br> a voice, but so does your audience.
+        Create connections with <br> your users as you engage in genuine discussion.
+      </p>
+
+      <button class="buttons">Register</button>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <section id="icones">
+      <img src="images/facebook.png" alt="facebook-logo" height="35rem">
+      <img src="images/twitter.png" alt="facebook-logo" height="35rem">
+      <img src="images/instagram.png" alt="facebook-logo" height="35rem">
+    </section>
+
+    <p class="attribution sr-only">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Diego Mendes</a>.
+    </p>
+  </footer>
+
+
+  <!--Made by Dieguinho s2-->
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+</script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
