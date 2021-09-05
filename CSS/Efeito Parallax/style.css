@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    padding-top: 100px;
+    
+    text-align: center;
+   font-size: 60px;
+   color: white;
+   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+.image1{
+    width: 100%;
+    height: 550px;
+
+    background-image: url(cidade1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image2{
+    width: 100%;
+    height: 550px;
+
+    background-image: url(cidade2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image3{
+    width: 100%;
+    height: 550px;
+
+    background-image: url(cidade3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.faixa{
+    width: 100%;
+    height: 250px;
+
+    background-color: blueviolet;
+}
+
+body{
+    background-color: #ff9999;
+}

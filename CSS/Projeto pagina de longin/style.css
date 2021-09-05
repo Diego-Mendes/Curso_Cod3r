@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+html{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Green-dark: hsla(154, 58%, 31%, 0.774); 
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsla(249, 10%, 26%, 0.280);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    font-size: 62.5%;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip-path: (0, 0, 0);
+    overflow: hidden;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    grid-area: 'main';
+    align-items: center;
+
+   
+}
+
+header{
+    grid-area: 'header';
+    color: white;
+    
+    width: 60rem;
+    padding-left: 10rem;
+    
+}
+
+
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--Red);
+
+
+   
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    display: flex;
+
+}
+
+
+
+header h1{
+    font-size: 3em;
+    line-height: 5.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#btn-comprar{
+ 
+    width: 48rem;
+    height: 5rem;
+
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+
+    background-color: var(--Blue);
+    color: white;
+    box-shadow: 0 .5rem var(--Dark-Blue); 
+    
+}
+
+form{
+    background-color: white;
+    height: 42rem;
+    width: 50rem;
+    text-align: center;
+   
+      
+    
+    padding: 3rem;
+   
+    border-radius: 1rem;
+    box-shadow: 0 .5rem var(--Dark-Blue);  
+}
+
+form input{
+    padding-left: 3rem; 
+    font-weight: 700;   
+
+    display: block;
+    width: 100%;
+    height: 14%;
+
+    border: solid .1rem var(--Grayish-Blue);
+    border-radius: .4rem;
+    margin-bottom: 2rem;
+}
+
+form input:focus{
+    outline: none;
+   border-color: var(--Blue);
+   
+}
+
+input:invalid{
+    border-color: var(--Red);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+form #btn-concluir{
+    width: 100%;
+    height: 14%;
+
+    background-color: var(--Green);
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    border-radius: .4rem;
+
+    margin-bottom: 1.3rem;
+    box-shadow: 0 .4rem var(--Green-dark); 
+}
+
+form #rodape-form{
+    font-size: 1.2rem;
+    color: var(--Grayish-Blue);
+    font-weight: 500;
+    
+}
+
+form #rodape-form a{
+    color: var(--Red);
+    font-weight: 600;
+}
+
+/*Media queries---------------------*/
+
+@media(max-width: 1200px){
+    header{
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 375px), (orientation: portrait){
+    body{
+        width: 100vw;
+        background-image: url(images/bg-intro-mobile.png);
+        background-repeat: no-repeat;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30rem 65rem;
+        grid-template-areas: 
+            'header'
+            'main'
+            
+        ;
+
+    }
+
+    header {
+        text-align: center;
+       
+        width: 87%;
+        align-self: center;
+        justify-self: center;
+
+        padding: 0;
+    }
+
+    header p{
+        font-size: 1.5rem;
+    }
+
+    header h1{
+        line-height: 4rem;
+        font-size: 3rem;
+    }
+
+    form{
+        width: 85%;
+        height: 50rem;
+    }
+
+    #btn-comprar{
+        width: 83%;
+        height: 8rem;
+    }
+}

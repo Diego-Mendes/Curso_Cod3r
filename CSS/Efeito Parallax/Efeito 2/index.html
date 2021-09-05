@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Parallax </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:300,400,500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+    <div class="hero2 purple">
+        <div class="content">
+            <!--define a velocidade dos objetos com essa propriedade. Vai de -10  a 10. Quanto maior mais rápido-->
+           <h2 class="rellax" data-rellax-speed="6">Strawberry</h2>
+           <h3 class="rellax" data-rellax-speed="4">White Chocolate</h3>
+           <button class="rellax" data-rellax-speed="0">Try now</button>
+        </div>
+        <img class="ice-cream rellax" src="ice-cream3.png" data-rellax-speed="-3b">
+    
+       
+
+        <!--Parte do javascript-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+       //coloca a classe dos elementos que quer colocar o efeito
+       var rellax = new Rellax('.rellax')
+   </script>
+</body>
+</html>
