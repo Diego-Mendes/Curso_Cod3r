@@ -16,25 +16,7 @@ h1{
     width: 100%;
     height: 550px;
 
-    background-image: url(cidade1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.image2{
-    width: 100%;
-    height: 550px;
-
-    background-image: url(cidade2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.image3{
-    width: 100%;
-    height: 550px;
-
-    background-image: url(cidade3.jpg);
+    background-image: url(londres.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -45,6 +27,29 @@ h1{
 
     background-color: blueviolet;
 }
+
+
+
+
+
+.image2{
+    width: 100%;
+    height: 550px;
+
+    background-image: url(cidadeurbana.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image3{
+    width: 100%;
+    height: 550px;
+
+    background-image: url(cidadenoite.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 body{
     background-color: #ff9999;
