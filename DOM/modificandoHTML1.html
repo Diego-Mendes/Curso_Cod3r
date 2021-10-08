@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Modificando HTML #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <script>
+        const body = document.querySelector('body')
+
+        const div1 = document.createElement('div') //cria um novo elemento 
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeiro'
+
+        const div2 = document.createElement('p') 
+        div2.innerHTML = 'Segundo'
+        div2.setAttribute('wm-atributo', true)
+        div1.appendChild(div2) //coloca um elemento - ultimo - dentro de outro
+
+        body.appendChild(div1)
+        
+
+        const texto = document.createTextNode('Antes...')
+        div1.insertBefore(texto, div1.childNodes[0]) // adicona o texto na div 1 antes do index 0, ou seja, o primeiro da fila 
+
+        const div3 = div1.cloneNode(true)
+        body.appendChild(div3)
+        // body.removeChild(div1)
+    </script>
+</body>
+
+</html>

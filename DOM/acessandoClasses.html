@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Acessando Classes</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class='conteudo exercicio'>
+    <div>
+        Classes
+    </div>
+    <script>
+        // ...
+
+        const Classes = document.querySelector('div').classList
+
+        Classes.add('destaque')
+        Classes.remove('destaque')
+        Classes.toggle('destaque') //se tem remove, se não tem adiciona
+
+       console.log(Classes.contains('destaque')) //verifica se existe classe
+       console.log(Classes.length) //numero de classes
+
+       Classes.toggle('destaque')
+    </script>
+</body>
+
+</html>

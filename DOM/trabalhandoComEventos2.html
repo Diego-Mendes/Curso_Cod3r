@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #02</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio" onselectstart="return false">
+    <div>Elemento</div>
+
+    <script>
+        const item = document.querySelector('div')
+
+        item.style.position = 'absolute'
+
+        item.onmousemove = e => { //chama a função onmousemove e passa o evento como parâmetro
+            const item =  e.target //posição de quem disparou o evento, caso a div
+            item.style.cursor = 'move' //muda o cursor quando passa por cima
+
+            if(e.buttons){ //dispara se o elemento for clicado
+                //posição vertical é igual a posição do cursor - a altura da div dividido por 2, pro elemento sempre ficar no meio do cursor.
+               item.style.top = `${e.clientY - (item.clientHeight / 2)}px`
+               item.style.left = `${e.clientX - (item.clientWidth / 2)}px`
+               //mesma coisa pra posição horizontal, só muda altura pra largura 
+            }
+        }
+
+    </script>
+</body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Trabalhando com Eventos #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <div>
+        <a href="https://google.com.br" >Google</a> <!--chama a função pelo onclick passando a variável interna event-->
+    </div>
+    <script>
+       function navegarem5s(e){
+           e.preventDefault() //remove o evento padrão
+            let link = e.target.href;
+           console.log('saindo em 5 segundos...')
+
+           setTimeout(() => {
+               window.location.href = link //substitui o endereço no navegador pelo o do link
+           }, 5000)
+       }
+
+       //segunda forma de chamar a função
+       const a = document.querySelector('a')
+       a.onclick = navegarem5s
+
+    </script>
+</body>
