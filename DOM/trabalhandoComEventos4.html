@@ -32,5 +32,22 @@
     </form>
     <script>
         // ...
+
+        const submit = document.querySelector('[wm-submit]')
+        submit.onclick = function(e){
+            e.preventDefault()
+
+            const form = e.target.parentNode;
+            const formData = new FormData(form) //passa o que está envolvendo o botão, no caso o formulário. 
+            //Agora voce tem acesso aos dados do formulário
+
+            formData.append('ajax', true) //adiciona um valor ao form
+            alert(formData.get('q')) //mostra um valor
+            console.log(formData.has('hl')) //verifica se existe um valor
+
+            for(let dados of formData){ //mostra todos os dados do form
+                console.log(dados)
+            }
+        }
     </script>
 </body>
