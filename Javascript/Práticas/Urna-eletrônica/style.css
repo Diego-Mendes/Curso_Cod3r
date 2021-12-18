@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+
+
+
+body{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna{
+    background-color: #dbd569;
+    padding: 3rem;
+
+    display: flex;
+
+}
+
+.tela{
+    width: 50rem;
+    height: 33rem;
+
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+
+    border: .2rem solid #555;
+
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.d-1{
+    flex: 1;
+    display: flex;
+}
+
+.d-1-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.d-1-left .part1{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.d-1-left .part2{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-1-left .part3{
+    height: 5rem;
+
+}
+
+.d-1-left .part3 .num{
+    display: inline-block;
+    border: .1rem solid black;
+    width: 3rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2.5rem;
+}
+
+.pisca{
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.d-1-left .part4{
+    flex: 1;
+    line-height: 3rem;
+
+}
+
+.d-1-right{
+    width: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.d1-img{
+    border: .1rem solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+
+.d1-img.small{
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+.d1-img img{
+    width: 100%;
+}
+
+.d-2{
+    height: 5rem;
+    font-size: 1.3rem;
+    border-top: .2rem solid black;
+    padding-left: 1rem;
+    
+
+}
+
+.teclado{
+
+    /* width: 60%; */
+    background-color: #403a3a;
+    margin-left: 3rem;
+
+    display: grid;
+    
+
+    grid-template-columns: 100%;
+    grid-template-rows: 6rem 6rem 6rem 6rem 1fr ;
+   
+
+    grid-template-areas: 
+    'linha1'
+    'linha2'
+    'linha3'
+    'linha4'
+    'linha5'
+    ;
+}
+
+.teclado button{
+    display: inline-block;
+    width: 10rem;
+    height: 5rem;
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    background-color: #000;
+    color: white;
+    margin: 1rem;
+    box-shadow: .3rem .3rem 0 #555;
+   
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.teclado .linha5 button:nth-child(1){
+    background-color: #fff;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.teclado .linha5 button:nth-child(2){
+    background-color: #f09046;
+    color: #000;
+}
+
+.teclado .linha5 button:nth-child(3){
+    background-color: #48c079;
+    color: black;
+}
+
+.linha1{grid-area: 'linha1';}
+.linha2{grid-area: 'linha2';}
+.linha3{grid-area: 'linha3';}
+.linha4{grid-area: 'linha4';
+    display: flex; 
+    justify-content: center;
+}
+.linha5{grid-area: 'linha5';
+    margin-top: 1rem;
+}
